@@ -7,6 +7,7 @@ import React from 'react';
 import Navbar from 'src/components/Navbar';
 import Backdrop from 'src/components/Backdrop';
 import SideDrawer from 'src/components/SideDrawer';
+import Footer from 'src/components/Footer';
 
 // == Import : local
 import './app.scss';
@@ -41,10 +42,12 @@ class App extends React.Component {
         <Navbar drawerClickHandler={this.drawerToggleClickHandler} />
         {sideDrawer}
         {backdrop}
-        <main style={{ Top: '100px' }}>
-hello
+        <main style={{ Top: '300px' }}>
+          <div>
+          hello
+          </div>
         </main>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     );
   }

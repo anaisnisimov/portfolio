@@ -23,6 +23,7 @@
 
     &-navigation {
     display:flex;
+    align-items: center;
     align-content: center;
     flex-direction: column;
     margin-left:1rem;
@@ -37,43 +38,33 @@
           text-transform: uppercase;
           font-weight: lighter;
           color:$colorTitleNav;
-          text-align:right;
+           text-align: center;
          
     }
 
-    &-navlink:hover,&-navlink:active {
+    &-navlink:hover, &-navlink:active {
       text-decoration:none;
       color:$colorHoverNav;
     }
- li a:after {
-    content: '';
-    display: block;
-    margin: auto;
-    height: 1px;
-    width: 0;
-    background: transparent;
-    transition: width .5s ease, background-color .5s ease;
-}
-li a:hover:after {
-    width: 20%;
-    background: $colorHoverNav;
-}
+
+
 }
 
 li {
        margin-bottom: 3em;
     }
 
-//     li a:after {
-//     content: '';
-//     display: block;
-//     margin: auto;
-//     height: 1px;
-//     width: 0;
-//     background: transparent;
-//     transition: width .5s ease, background-color .5s ease;
-// }
-// li a:hover:after {
-//     width: 20%;
-//     background: $colorHoverNav;
-// }
+ li a:after {
+    content: '';
+    display: flex;
+    margin: auto;
+    height: 1px;
+    width: 0;
+    background: transparent;
+    transition:  width .5s ease, background-color .5s ease;
+}
+li a:hover:after {
+    width: 100%;
+    background: $colorHoverNav;
+    
+}
