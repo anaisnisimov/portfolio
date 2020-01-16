@@ -1,0 +1,79 @@
+@import 'src/styles/vars';
+@import 'src/styles/breackpoint';
+#sideDrawer {
+  height: 100%;
+  background: $backgroundNav;
+  box-shadow: 1px 0px 8px rgba(0,0,0,0.5);
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 70%;
+  max-width: 400px;
+  z-index:1002; 
+  
+    &-logo{
+      height:20%;
+    }
+    &-navlogo{
+      width:250px;
+      height: 30%;
+      min-width:250px;
+      min-height: 100px;
+    }
+
+    &-navigation {
+    display:flex;
+    align-content: center;
+    flex-direction: column;
+    margin-left:1rem;
+    height: 80%; 
+    }
+   
+    
+   &-navlink {
+          text-decoration: none;
+          font-size: 1.2em;
+          font-family: 'Alegreya Sans SC', sans-serif;
+          text-transform: uppercase;
+          font-weight: lighter;
+          color:$colorTitleNav;
+          text-align:right;
+         
+    }
+
+    &-navlink:hover,&-navlink:active {
+      text-decoration:none;
+      color:$colorHoverNav;
+    }
+ li a:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 1px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+li a:hover:after {
+    width: 20%;
+    background: $colorHoverNav;
+}
+}
+
+li {
+       margin-bottom: 3em;
+    }
+
+//     li a:after {
+//     content: '';
+//     display: block;
+//     margin: auto;
+//     height: 1px;
+//     width: 0;
+//     background: transparent;
+//     transition: width .5s ease, background-color .5s ease;
+// }
+// li a:hover:after {
+//     width: 20%;
+//     background: $colorHoverNav;
+// }
