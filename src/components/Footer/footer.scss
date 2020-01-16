@@ -1,0 +1,65 @@
+@import 'src/styles/vars';
+@import 'src/styles/breackpoint';
+
+#footer {
+   position:fixed;
+    bottom:0em;
+    width: 100%;
+    height:100px;
+    background-color: $backgroundNav;
+    z-index:1000;
+
+  &-navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    padding: 5em 0rem;
+  }
+
+&-navigationItems{
+   width:80%;
+  
+   max-width: 80%;
+   
+ 
+ }
+  &-navigationItems ul {
+    list-style:none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+
+  &-navlink {
+    font-size: 1.2em;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    color:$colorTitleNav; 
+    @include breakpoint(aunt-bear) { font-size: 0.9em; }   
+    @include breakpoint(baby-bear) { font-size: 0.6em; }
+}
+
+  &-navlink:hover,&-navlink:active {
+    text-decoration:none;
+     color:$colorHoverNav;
+
+  }
+
+  li a:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 1px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+li a:hover:after {
+    width: 90%;
+    background: $colorHoverNav;
+}
+}
+
