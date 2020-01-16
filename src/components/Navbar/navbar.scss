@@ -1,0 +1,83 @@
+@import 'src/styles/vars';
+@import 'src/styles/breackpoint';
+
+#navbar {
+  position: fixed;
+  top:0;
+  left:0; 
+  width:100%;
+  background: $backgroundNav;
+  height:100px;
+  z-index:1000!important;
+  box-shadow: 1px 0px 8px rgba(0,0,0,0.5);
+
+  &-logo {
+    width:20%;
+    height: 100%;
+    min-width:40px;
+    min-height: 100px;
+  }
+  &-navlogo {
+    width:250px;
+    height: 100%;
+    min-width:120px;
+    min-height:90px;
+
+  }
+
+  &-navlink {
+    font-size: 1.2em;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    color:$colorTitleNav; 
+    @include breakpoint(aunt-bear) { visibility: collapse; }   
+    @include breakpoint(baby-bear) { visibility: collapse; }
+}
+
+
+  
+  &-navigation {
+    display:flex;
+    align-items: center; 
+    height: 100%;
+    padding: 0 2rem;
+  }
+  &-spacer {
+  flex:1;
+  }
+ &-navigationItems{
+   width:80%;
+   height: 40%;
+   max-width: 60%;
+   min-height: 40%;
+ }
+  &-navigationItems ul {
+    list-style:none;
+    display: flex;
+    justify-content: space-around;
+  }
+ 
+
+  
+  &-navlink:hover,&-navlink:active {
+    text-decoration:none;
+     color:$colorHoverNav;
+
+  }
+
+  li a:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 1px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+li a:hover:after {
+    width: 90%;
+    background: $colorHoverNav;
+}
+}
+
