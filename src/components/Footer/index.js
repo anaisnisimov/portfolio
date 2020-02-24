@@ -1,21 +1,13 @@
+// import React
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+
+// import scss
 import './footer.scss';
 
 const Footer = () => (
-  <footer id="footer">
-    <nav id="footer-navigation">
-      <div id="footer-navigationItems">
-        <ul>
-          <li> <NavLink id="footer-navlink" exact to="/Àpropros">À propos</NavLink></li>
-          <li><NavLink id="footer-navlink" exact to="/Contact">Contact</NavLink></li>
-          <li><NavLink id="footer-navlink" exact to="/MentionsLégales">Mentions Légales</NavLink></li>
-          <li><NavLink id="footer-navlink" exact to="/Partagez">Partagez</NavLink></li>
-        </ul>
-      </div>
-    </nav>
-  </footer>
-
+  <div id="footer">
+    <p id="footer-paragraph">&copy; Copyright 2020 All Rights Reserved </p>
+  </div>
 );
 
 export default Footer;

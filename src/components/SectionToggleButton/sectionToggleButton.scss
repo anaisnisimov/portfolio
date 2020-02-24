@@ -1,0 +1,29 @@
+@import 'src/styles/vars';
+@import 'src/styles/breackpoint';
+
+#sectionToggleButton {
+    position:fixed;
+  width: 50%;
+  height: 37%;
+  top:0;
+  right:0;
+  z-index:999;
+  background: transparent;
+  border:none;
+  cursor: pointer;
+  box-sizing: border-box;
+   visibility: visible;
+
+   &-icon{
+     margin:2em;
+    
+   }
+
+}
+#sectionToggleButton:hover, #sectionToggleButton:after{
+   color: $backgroundNav;
+   cursor:pointer;
+   }
+#sectionToggleButton:focus {
+  outline: none;
+}

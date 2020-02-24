@@ -1,0 +1,18 @@
+@import 'src/styles/vars';
+@import 'src/styles/breackpoint';
+#section {
+  height: 100%;
+  background: $backgroundNav;
+  box-shadow: 1px 0px 8px rgba(0,0,0,0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 70%;
+  max-width: 50%;
+   
+  @include breakpoint(uncle-bear){width:100%;max-width: 100%;}
+  @include breakpoint(baby-bear) {width:100%;max-width: 100%;}
+  z-index:998; 
+  
+
+}

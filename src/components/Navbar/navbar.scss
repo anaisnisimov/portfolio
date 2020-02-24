@@ -44,12 +44,13 @@
     padding: 0 2rem;
   }
   &-spacer {
+    width: 10%;
   flex:1;
   }
  &-navigationItems{
    width:80%;
    height: 40%;
-   max-width: 60%;
+   max-width: 70%;
    min-height: 40%;
  }
   &-navigationItems ul {

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
@@ -14,13 +14,13 @@ class NavBar extends React.Component {
   // function to change the state of the logo's overlay when we hover with the mouse
   HandleHover = () => {
     this.setState({ overlay: !this.state.overlay });
-    console.log('jechange');
+    // console.log('jechange');
   }
 
   // function to change the state of the click of the navbar
   drawerToggleClickHandler = () => {
     this.setState((prevState) => {
-      console.log('jeclique', this.state.sideDrawerOpen);
+      // console.log('jeclique', this.state.sideDrawerOpen);
       return { sideDrawerOpen: !prevState.sideDrawerOpen };
     });
   };
@@ -51,10 +51,11 @@ class NavBar extends React.Component {
           <div id="navbar-spacer" />
           <div id="navbar-navigationItems">
             <ul>
-              <li> <NavLink id="navbar-navlink" exact to="/">Accueil</NavLink></li>
-              <li><NavLink id="navbar-navlink" exact to="/art">Art</NavLink></li>
-              <li><NavLink id="navbar-navlink" exact to="/web">web</NavLink></li>
-              <li><NavLink id="navbar-navlink" exact to="/cv">cv</NavLink></li>
+              <li><AnchorLink offset={() => 100} id="navbar-navlink" href="#home">Accueil</AnchorLink></li>
+              <li><AnchorLink offset={() => 100} id="navbar-navlink" href="#art">Art</AnchorLink></li>
+              <li><AnchorLink offset={() => 100} id="navbar-navlink" href="#web">web</AnchorLink></li>
+              <li><AnchorLink offset={() => 100} id="navbar-navlink" href="#apropros">À propos</AnchorLink></li>
+              <li><AnchorLink offset={() => 100} id="navbar-navlink" href="#contact">Contact</AnchorLink></li>
             </ul>
           </div>
         </nav>
