@@ -2,11 +2,9 @@
 @import 'src/styles/breackpoint';
 
 #sectionToggleButton {
-    position:fixed;
-  width: 50%;
-  height: 37%;
-  top:0;
-  right:0;
+  position:fixed;
+  top:5em;
+  right:0em;
   z-index:999;
   background: transparent;
   border:none;
@@ -15,10 +13,9 @@
    visibility: visible;
 
    &-icon{
-     margin:2em;
+    margin:0.5em;
     
    }
-
 }
 #sectionToggleButton:hover, #sectionToggleButton:after{
    color: $backgroundNav;
