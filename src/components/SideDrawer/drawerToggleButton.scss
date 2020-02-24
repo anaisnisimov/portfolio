@@ -10,6 +10,11 @@
   cursor: pointer;
   padding: 0;
   box-sizing: border-box;
+  @include breakpoint(maxi-papa-bear) { visibility: hidden; }   
+  @include breakpoint(papa-bear) { visibility: hidden; }   
+  @include breakpoint(mama-bear) { visibility: hidden; }
+  @include breakpoint(aunt-bear) { visibility: visible; }   
+  @include breakpoint(baby-bear) { visibility: visible; }
   &-line {
     width:30px;
     height: 2px;

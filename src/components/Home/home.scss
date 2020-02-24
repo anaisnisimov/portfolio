@@ -1,0 +1,45 @@
+@import 'src/styles/vars';
+@import 'src/styles/breackpoint';
+
+#home {
+  width: 100%;
+  margin-top:80px;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  &-ContainerImage{
+    align-items: center;
+  }
+  &-image{ 
+    width: 90%;
+    height: 90%;
+    @include breakpoint(uncle-bear) {width: 90%; height:90%;}
+  @include breakpoint(baby-bear) {width: 90%; height:90%;}
+  }
+ &-presentation {
+   width:100%;
+  margin:1.4em 0em;
+     @include breakpoint(uncle-bear) {width: 90%; height:90%;}
+  @include breakpoint(baby-bear) {margin:3.2em 0em;}
+ }
+ &-title{
+   font-size: 90px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    text-align: center;
+     @include breakpoint(uncle-bear) {font-size: 60px;}
+    @include breakpoint(baby-bear) {font-size: 40px;}
+  
+ }
+ &-paragraph{
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+ }
+ &-profil{
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+ }
+
+   
+}

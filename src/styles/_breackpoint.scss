@@ -5,6 +5,9 @@
   @if $point == papa-bear {
     @media (max-width: 1600px) { @content; }
   }
+  @if $point == papabro-bear {
+    @media (max-width: 1400px) { @content; }
+  }
   @else if $point == mama-bear {
     @media (max-width: 1250px) { @content; }
   }

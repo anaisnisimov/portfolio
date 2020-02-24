@@ -1,0 +1,63 @@
+@import 'src/styles/vars';
+@import 'src/styles/breackpoint';
+
+#about {
+  width: 100%;
+    top:100px;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: $backgroundAbout ;
+  &-ContainerImage{
+    align-items: center;
+  }
+  &-image{ 
+    @include breakpoint(uncle-bear) {width: 90%; height:90%;}
+  @include breakpoint(baby-bear) {width: 90%; height:90%;}
+  }
+ &-presentation {
+   width:40%;
+  margin:1.4em 0em;
+ }
+
+ &-competences{
+   width:40%;
+   display:flex;
+   justify-content: space-between;
+ }
+ &-ContainerInfoRight{
+
+ }
+
+ &-ContainerInfoLeft{
+   
+ }
+  &-sectionTitle{
+       font-size: 90px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    text-align: center;
+     @include breakpoint(uncle-bear) {font-size: 60px;}
+    @include breakpoint(baby-bear) {font-size: 40px;}
+  }
+  &-subtitle{
+   font-size: 1.5em;
+   font-family: 'Alegreya Sans SC', sans-serif;
+    margin: 1.2em 0em;
+ }
+ &-paragraph{
+  font-family: 'Montserrat', sans-serif;
+  text-align: justify;
+ }
+ &-profil{
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+ }
+
+   
+}
+
+li{
+  font-family: 'Montserrat', sans-serif;
+ margin: 0.4em 0em;
+}

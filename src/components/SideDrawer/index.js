@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './sideDrawer.scss';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 class SideDrawer extends React.Component {
   state = {
@@ -31,10 +32,11 @@ class SideDrawer extends React.Component {
         </div>
         <div id="sideDrawer-navigation">
           <ul>
-            <li><NavLink id="sideDrawer-navlink" exact to="/">Accueil</NavLink></li>
-            <li><NavLink id="sideDrawer-navlink" exact to="/art">Art</NavLink></li>
-            <li><NavLink id="sideDrawer-navlink" exact to="/web">web</NavLink></li>
-            <li><NavLink id="sideDrawer-navlink" exact to="/cv">cv</NavLink></li>
+            <li><AnchorLink offset={() => 100} id="sideDrawer-navlink" href="#home">Accueil</AnchorLink></li>
+            <li><AnchorLink offset={() => 100} id="sideDrawer-navlink" href="#art">Art</AnchorLink></li>
+            <li><AnchorLink offset={() => 100} id="sideDrawer-navlink" href="#web">web</AnchorLink></li>
+            <li><AnchorLink offset={() => 100} id="sideDrawer-navlink" href="#apropros">À propos</AnchorLink></li>
+            <li><AnchorLink offset={() => 100} id="sideDrawer-navlink" href="#contact">Contact</AnchorLink></li>
           </ul>
         </div>
       </nav>
