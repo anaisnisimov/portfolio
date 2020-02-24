@@ -1,0 +1,54 @@
+@import 'src/styles/vars';
+@import 'src/styles/breackpoint';
+#cartel {
+ width:80%;
+  top:30em;
+  &-container{
+    margin:0em 0em 0em 2em;
+  }
+  &-title{
+    font-size:1.3em;
+    text-align:left;
+    text-transform: uppercase;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    margin:0.2em 0em;
+  }
+  &-infos{
+    font-size:0.6em;
+    text-align:left;
+    font-family: 'Quicksand',sans-serif ;
+     margin:0.2em 0em;
+   
+  }
+  &-location{
+    font-size:0.8em;
+    text-align:left;
+    font-family: 'Quicksand',sans-serif ;
+    margin:0.2em 0em;
+   
+  }
+  &-date{
+    font-size:0.6em;
+    text-align:left;
+    font-family: 'Quicksand',sans-serif ;
+    margin:0.2em 0em;
+   
+  }
+   &-description{
+    font-size:0.7em;
+    text-align:left;
+    text-transform: justify;
+    font-family: 'Quicksand',sans-serif ;
+    margin:2em 0em;
+  }
+
+ 
+   &-spanTitle{
+    font-size:1.2em;
+    font-weight: medium;
+    text-align:left;
+    font-family: 'Quicksand',sans-serif ;
+   
+   
+  }
+}
