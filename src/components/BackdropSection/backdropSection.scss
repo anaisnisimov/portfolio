@@ -1,0 +1,13 @@
+@import 'src/styles/breackpoint';
+
+#backdropSection {
+  position:fixed;
+  width: 50%;
+  height: 100%;
+  top:0;
+  left:0;
+  background: rgba(0,0,0,0.3);
+  z-index:999;
+    @include breakpoint(uncle-bear){visibility:hidden;}
+  @include breakpoint(baby-bear) {visibility:hidden;}
+}

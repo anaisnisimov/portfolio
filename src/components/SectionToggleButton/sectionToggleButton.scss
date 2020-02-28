@@ -16,6 +16,10 @@
     margin:0.5em;
     
    }
+    &-icon:hover, &-icon:after{
+   color: $backgroundNav;
+   cursor:pointer;
+   }
 }
 #sectionToggleButton:hover, #sectionToggleButton:after{
    color: $backgroundNav;

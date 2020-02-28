@@ -1,11 +1,10 @@
 // == Import : npm
 import React from 'react';
-// import router
-// import { Route, Switch, Redirect } from 'react-router-dom';
 
 // import components
 import Navbar from 'src/components/Navbar';
 import Backdrop from 'src/components/Backdrop';
+import BackdropSection from 'src/components/BackdropSection';
 import SideDrawer from 'src/components/SideDrawer';
 import Home from 'src/components/Home';
 import Art from 'src/components/Art';
@@ -14,18 +13,21 @@ import About from 'src/components/About';
 import Contact from 'src/components/Contact';
 import Footer from 'src/components/Footer';
 import Section from 'src/components/Section';
+import SectionArt from 'src/components/SectionArt';
 import SectionToggleButton from 'src/components/SectionToggleButton';
-
-
 
 // == Import : local
 import './app.scss';
+
+// import data json
+import data from 'src/data/data';
 
 // == Composant
 class App extends React.Component {
   state = {
     sideDrawerOpen: false,
-    sectionOpen: false,
+    sectionOpen: '',
+    cat: '',
   };
 
   // function to change the state of the click of the navbar
@@ -39,30 +41,46 @@ class App extends React.Component {
 
 
   // function to change the state of the buttonclose of section article (art and web)
-  sectionToggleClickHandler = () => {
-    this.setState(prevState => ({ sectionOpen: !prevState.sectionOpen }));
+  sectionToggleClickHandler = (id, cat) => {
+    const tempFilter = cat === 'web'
+      ? data[0].web.filter(currentData => currentData.id === id)
+      : data[0].art.filter(currentData => currentData.id === id);
+    // const tempFilter = data[0].cat.filter(currentData => currentData.id === id);
+    this.setState(() => ({ sectionOpen: tempFilter, cat }));
   }
 
   buttonCloseClickHandler = () => {
-    this.setState({ sectionOpen: false });
+    this.setState({ sectionOpen: '', cat: '' });
+  };
+
+  backdropClickHandlerSection = () => {
+    this.setState({ sectionOpen: '', cat: '' });
   };
 
   render() {
-    const { sideDrawerOpen, sectionOpen } = this.state;
+    const { sideDrawerOpen, sectionOpen, cat } = this.state;
 
     let backdrop;
     let sideDrawer;
     let sectionClose;
     let sectionToggleButton;
-
+    let backdropSection;
+    // condition for responsive navbar
     if (sideDrawerOpen) {
       sideDrawer = <SideDrawer />;
       backdrop = <Backdrop clickClose={this.backdropClickHandler} />;
     }
 
-    if (sectionOpen) {
+    // condition for article section art and web
+    if (sectionOpen !== '') {
       sectionClose = <SectionToggleButton clickClose={this.buttonCloseClickHandler} />;
-      sectionToggleButton = <Section clickClose={this.buttonCloseClickHandler} />;
+      backdropSection = <BackdropSection clickCloseBackdrop={this.backdropClickHandlerSection} />;
+      if (cat === 'web') {
+        sectionToggleButton = <Section cat={cat} arrayOpened={sectionOpen} clickClose={this.buttonCloseClickHandler} clickCloseBackdrop={this.backdropClickHandlerSection}  />;
+      }
+      else {
+        sectionToggleButton = <SectionArt cat={cat} arrayOpened={sectionOpen} clickClose={this.buttonCloseClickHandler} clickCloseBackdrop={this.backdropClickHandlerSection} />;
+      }
     }
 
     return (
@@ -70,8 +88,7 @@ class App extends React.Component {
         <Navbar drawerClickHandler={this.drawerToggleClickHandler} />
         {sideDrawer}
         {backdrop}
-        <main style={{ Top: '300px' }}>      
-          {/* <Section /> */}
+        <main style={{ Top: '300px' }}>
           <div>
             <section id="home">
               <Home />
@@ -80,11 +97,14 @@ class App extends React.Component {
               <Art sectionToggleClickHandler={this.sectionToggleClickHandler} />
               {sectionClose}
               {sectionToggleButton}
+              {backdropSection}
             </section>
             <section id="web">
               <Web sectionToggleClickHandler={this.sectionToggleClickHandler} />
               {sectionClose}
               {sectionToggleButton}
+              {backdropSection}
+
             </section>
             <section id="apropros">
               <About />
@@ -99,7 +119,6 @@ class App extends React.Component {
     );
   }
 }
-
 
 // == Export
 export default App;

@@ -1,5 +1,5 @@
 import React from 'react';
-import './section.scss';
+import './sectionArt.scss';
 import PropTypes from 'prop-types';
 
 // scrollbar
@@ -8,28 +8,39 @@ import PerfectScrollbar from 'react-perfect-scrollbar';
 
 // import component
 import SectionToggleButton from 'src/components/SectionToggleButton';
-import Caroussel from 'src/components/Section/Caroussel';
-import Infos from 'src/components/Section/Infos';
+import Caroussel from 'src/components/SectionArt/Caroussel';
+import Cartel from 'src/components/SectionArt/Cartel';
+import SoundPart from 'src/components/SectionArt/SoundPart';
+import VideoPart from 'src/components/SectionArt/VideoPart';
+
+
+// import data json
+import data from 'src/data/data';
 
 class Section extends React.Component {
   state = {
   }
 
   render() {
-    // const dataWeb = this.props;
-    // console.log('dans section un tableau', data[0].web);
     const { arrayOpened } = this.props;
+    // console.log('dans section un tableau', data[0].art);
     // console.log('arrayOpened', arrayOpened);
 
     return (
-      <div id="section">
+      <div id="sectionArt">
         <PerfectScrollbar>
-          <div id="section-container">
+          <div id="sectionArt-container">
             <SectionToggleButton />
             <Caroussel
               {...arrayOpened[0]}
             />
-            <Infos
+            <Cartel
+              {...arrayOpened[0]}
+            />
+            <SoundPart
+              {...arrayOpened[0]}
+            />
+            <VideoPart
               {...arrayOpened[0]}
             />
           </div>
