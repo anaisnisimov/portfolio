@@ -2,19 +2,22 @@ import React from 'react';
 // import scss
 import './web.scss';
 import PropTypes from 'prop-types';
+// import data json
+import data from 'src/data/data';
+// import animation aos
+import AOS from 'aos';
+import 'aos/src/sass/aos.scss'; // You can also use <link> for styles
+import 'aos/dist/aos.css';
 
+AOS.init();
 
 class Web extends React.Component {
-  state = {
-    sectionOpen: false,
-  }
-
-  sectionToggleClickHandler = () => {
-    this.setState(prevState => ({ sectionOpen: !prevState.sectionOpen }));
-  }
+  state = { }
 
   render() {
     const { sectionToggleClickHandler } = this.props;
+    // console.log('un tableau json pour le web', data[0].web);
+
     return (
       <div id="web">
         <h1
@@ -30,17 +33,19 @@ class Web extends React.Component {
         >Web
         </h1>
         <div id="web-container">
-          <div id="web-ContainerImage">
-            <img
-              id="web-image"
-              src="src/assets/images/musicalcard.jpg"
-              alt="ArtPicture"
-            />
-            <div id="web-overlay" onClick={sectionToggleClickHandler}>
-              <h3 id="web-title">musicalcard</h3>
-              <p id="web-paragraph">Editions-2017</p>
+          {data[0].web.map(currentDataWeb => (
+            <div id="web-ContainerImage" key={currentDataWeb.name} onClick={() => sectionToggleClickHandler(currentDataWeb.id, 'web')}>
+              <img
+                id="web-image"
+                src={`${currentDataWeb.cover}`}
+                alt="ArtPicture"
+              />
+              <div id="web-overlay">
+                <h3 id="web-title">{currentDataWeb.title}</h3>
+                <p id="web-paragraph">{currentDataWeb.type}</p>
+              </div>
             </div>
-          </div>
+          ))}
         </div>
       </div>
     );
@@ -53,21 +58,3 @@ Web.propTypes = {
 
 
 export default Web;
-
-// {/* const Web = () => (
-//   <div id="web">
-//     <h1 id="web-sectionTitle">Web</h1>
-//     <div id="web-container">
-//       <div id="web-ContainerImage">
-//         <img
-//           id="web-image"
-//           src="src/assets/images/musicalcard.jpg"
-//           alt="ArtPicture"
-//         />
-//         <NavLink exact to="/detail" id="web-overlay">
-//           <h3 id="web-title">musicalcard</h3>
-//           <p id="web-paragraph">Editions-2017</p>
-//         </NavLink>
-//       </div>
-
-// ); */}

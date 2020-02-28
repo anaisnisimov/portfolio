@@ -1,0 +1,96 @@
+@import 'src/styles/vars';
+@import 'src/styles/breackpoint';
+#infos {
+width:100%;
+top:30em;
+display:flex;
+flex-wrap: wrap;
+justify-content: space-around;
+
+  &-title{
+    font-size:1.3em;
+    text-align:left;
+    text-transform: uppercase;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    margin:2em 0em 1.3em 0em;
+  }
+  &-subtitle{
+    font-size:0.9em;
+    text-align:left;
+    font-family: 'Alegreya Sans SC', sans-serif;
+     margin:1.6em 0em;
+  }
+  &-titleProject{
+    font-size:1em;
+    text-transform: uppercase;
+    text-align:left;
+    font-family: 'Quicksand',sans-serif ;
+     margin:0.2em 0em;
+   
+  }
+  &-date{
+    font-size:0.9em;
+    text-align:left;
+    font-family: 'Quicksand',sans-serif ;
+    margin:0.2em 0em;
+   
+  }
+    &-description{
+    font-size:0.8em;
+    text-align:left;
+    text-transform: justify;
+    font-family: 'Quicksand',sans-serif ;
+    margin:2em 0em;
+  }
+
+  //part skills 
+    &-containerListSkills{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &-skills{
+    background-color:$backgroundSkills;
+    padding:0.3em;
+    text-transform: uppercase;
+    font-size:0.8em;
+    text-align:left;
+    font-family: 'Quicksand',sans-serif ;
+    margin:0.2em 0.4em; 
+  }
+//part informations
+&-containerInfos {
+  @include breakpoint(uncle-bear){width:100%; margin:0em 2em;}
+  @include breakpoint(baby-bear) {width:100%; margin:0em 2em;}
+  
+  }
+  //part developpement
+  &-container {
+  @include breakpoint(uncle-bear){width:100%; margin:0em 2em;}
+  @include breakpoint(baby-bear) {width:100%; margin:0em 2em;}
+  }
+  //part link
+ 
+  &-containerlink {
+    width:100%;
+    margin:3em 0em;
+  }
+  &-textLink {
+    text-transform: uppercase;
+    font-size:0.8em;
+    text-align:center;
+    font-family: 'Quicksand',sans-serif ;
+    margin:0.2em 0em;
+     padding:0.6em;
+    color:$colorLineTitle;
+    background-color: transparent;
+     border: solid 0.4px $colorLineTitle;
+     text-decoration:none;
+     cursor:pointer;
+  }
+   &-textLink:hover,  &-textLink:after {
+    background-color:$colorLineTitle; 
+   border-color: $colorLineTitle;
+   color:$backgroundNav;
+   cursor:pointer;
+}
+}

@@ -2,13 +2,11 @@
 @import 'src/styles/breackpoint';
 #art{
 width:100%;
-background-color: $backgroundNav;
 &-container{
   width:100%; 
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
-
 }
 
 &-ContainerImage {
@@ -58,13 +56,16 @@ position: relative;
     }  
   }
   &-paragraph {
+       font-size: 15px;
     text-align: center;
     font-family: 'Alegreya Sans SC', sans-serif;
-    color:grey;
+    color:$colorTitleNav;
+    font-weight: bold;
   }
 
   &-title {
-    margin-top: 25%;
+       font-size: 25px;
+    margin-top: 28%;
     text-align: center;
     text-transform: uppercase;
     font-family: 'Alegreya Sans SC', sans-serif;
@@ -77,10 +78,10 @@ position: relative;
         opacity:0;
         text-align: center;
         text-decoration: none;
-        color:black;
+
       }
   &-sectionTitle{
-     font-size: 90px;
+       font-size: 90px;
     font-family: 'Alegreya Sans SC', sans-serif;
     text-align: center;
      @include breakpoint(uncle-bear) {font-size: 60px;}
@@ -90,12 +91,12 @@ position: relative;
 
 
     &-image:hover, &-image:after {
-      opacity: 0.4;
+      opacity: 0.15;
       cursor: pointer;
       transition: .2s ease;
       }
        &-overlay:hover,&-overlay:after {
-         opacity:0.7;
+         opacity:0.8;
          background-color: $backgroundNav;
          cursor: pointer;
          transition: .2s ease;

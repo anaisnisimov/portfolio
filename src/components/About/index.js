@@ -4,14 +4,32 @@ import React from 'react';
 // import scss
 import './about.scss';
 
+// import animation aos
+import AOS from 'aos';
+import 'aos/src/sass/aos.scss'; // You can also use <link> for styles
+import 'aos/dist/aos.css';
+
+AOS.init();
 
 const About = () => (
   <div id="about">
-  <div id="about-presentation">
-      <h1 id="about-sectionTitle">À propos</h1>
-        <p id="about-paragraph">Jeune Artiste sonore et numérique, je suis aussi développeuse web fullstack, spécialisation React. Relation Humain/Machine, Création de nouvelle imaginaire par le son, mon travail artistique se tisse peu à peu avec les métiers du numériques.</p>
-        <h3 id="about-subtitle">Compétences</h3>
-  </div>
+    <div id="about-presentation">
+      <h1
+        id="about-sectionTitle"
+        data-aos="fade-right"
+        data-aos-offset="100"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+      >
+     À propos
+      </h1>
+          <p id="about-paragraph">Jeune Artiste sonore et numérique, je suis aussi développeuse web fullstack, spécialisation React. Relation Humain/Machine, Création de nouvelle imaginaire par le son, mon travail artistique se tisse peu à peu avec les métiers du numériques.</p>
+          <h3 id="about-subtitle">Compétences</h3>
+    </div>
 
     <div id="about-competences">
       <div id="about-ContainerInfoRight">

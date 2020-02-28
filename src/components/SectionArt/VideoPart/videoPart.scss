@@ -1,0 +1,9 @@
+@import 'src/styles/breackpoint';
+
+#video{
+
+  align-self: center;
+  @include breakpoint(uncle-bear){width:100%; margin: 0em 0em 4em 0em;}
+  @include breakpoint(baby-bear) {width:100%; margin: 0em 0em 4em 0em;}
+ 
+}

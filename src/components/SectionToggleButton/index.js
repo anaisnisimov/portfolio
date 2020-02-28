@@ -7,12 +7,15 @@ import { Icon } from 'semantic-ui-react';
 // with the function buttonToggleClickHandler
 const SectionToggleButton = ({ clickClose }) => (
   <button id="sectionToggleButton" type="button">
-    <Icon id="sectionToggleButton-icon" link name="close" onClick={clickClose} size="large" hover="this.style.color='grey'" />
+    <Icon id="sectionToggleButton-icon" name="close" onClick={clickClose} size="large" hover="this.style.color='grey'" />
   </button>
 );
 
 SectionToggleButton.propTypes = {
-  clickClose: propTypes.func.isRequired,
+  clickClose: propTypes.func,
 };
 
+SectionToggleButton.defaultProps = {
+  clickClose: propTypes.func,
+};
 export default SectionToggleButton;

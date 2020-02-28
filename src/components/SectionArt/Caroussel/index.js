@@ -16,6 +16,7 @@ const Caroussel = ({ image }) => (
             className="d-block w-100"
             src={`${imageList}`}
             alt="First slide"
+            id="caroussel-image"
           />
         </Carousel.Item>
       ))}

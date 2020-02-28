@@ -2,6 +2,10 @@ import React from 'react';
 // import scss
 import './art.scss';
 import PropTypes from 'prop-types';
+// import data json
+import data from 'src/data/data';
+
+// import animation aos
 import AOS from 'aos';
 import 'aos/src/sass/aos.scss'; // You can also use <link> for styles
 import 'aos/dist/aos.css';
@@ -10,15 +14,13 @@ AOS.init();
 
 class Art extends React.Component {
   state = {
-    sectionOpen: false,
-  }
 
-  sectionToggleClickHandler = () => {
-    this.setState(prevState => ({ sectionOpen: !prevState.sectionOpen }));
   }
 
   render() {
     const { sectionToggleClickHandler } = this.props;
+    // console.log('tableau', data[0].art[0].title);
+
     return (
       <div id="art">
         <h1
@@ -36,17 +38,19 @@ class Art extends React.Component {
         </h1>
 
         <div id="art-container">
-          <div id="art-ContainerImage">
-            <img
-              id="art-image"
-              src="src/assets/images/musicalcard.jpg"
-              alt="ArtPicture"
-            />
-            <div id="art-overlay" onClick={sectionToggleClickHandler}>
-              <h3 id="art-title">musicalcard</h3>
-              <p id="art-paragraph">Editions-2017</p>
+          {data[0].art.map(currentDataArt => (
+            <div id="art-ContainerImage" key={currentDataArt.name} onClick={() => sectionToggleClickHandler(currentDataArt.id, 'art')}>
+              <img
+                id="art-image"
+                src={`${currentDataArt.cover}`}
+                alt="ArtPicture"
+              />
+              <div id="art-overlay">
+                <h3 id="art-title">{currentDataArt.title}</h3>
+                <p id="art-paragraph">{currentDataArt.type}</p>
+              </div>
             </div>
-          </div>
+          ))}
         </div>
       </div>
 
