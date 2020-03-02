@@ -8,56 +8,124 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: $backgroundAbout ;
+ 
+  &-presentationContainer{
+      width:80%;
+      margin:2em 0em;
+  display:flex;
+  justify-content: center;
+}
+    &-description{
+      width:50%;
+      display:flex;
+     @include breakpoint(baby-bear) {width: 50%;}
+   
+    }
   &-ContainerImage{
-    align-items: center;
+   width: 30%;
+   height: 30%;
+  display: flex;
+  justify-content: flex-end;
+      margin:0em 2em;
+
+ @include breakpoint(mama-bear) {width: 30%; height:30%;} 
+ @include breakpoint(aunt-bear) {width: 30%; height:30%;}    
+  @include breakpoint(uncle-bear) {width: 30%; height:30%;}   
+  @include breakpoint(baby-bear) {width: 30%; height:30%;}
   }
   &-image{ 
-    @include breakpoint(uncle-bear) {width: 90%; height:90%;}
-  @include breakpoint(baby-bear) {width: 90%; height:90%;}
+     width:70%;
+    height: 70%;
+    max-width: 70%;
+    max-height: 70%;
+     @include breakpoint(mama-bear) {
+       width:70%;
+        height: 70%;
+        max-width: 70%;
+        max-height: 70%;
+    }   
+  @include breakpoint(aunt-bear) {     
+       width:70%;
+        height: 70%;
+        max-width: 70%;
+        max-height: 70%;
+    }   
+  @include breakpoint(uncle-bear) {     
+     width:70%;
+        height: 70%;
+        max-width: 70%;
+        max-height: 70%;
+    }    
+  @include breakpoint(baby-bear) {     
+      width:90%;
+        height: 90%;
+        max-width: 90%;
+        max-height: 90%;
+    }  
   }
- &-presentation {
-   width:40%;
-  margin:1.4em 0em;
- }
 
  &-competences{
-   width:40%;
+  width:20%;
    display:flex;
-   justify-content: space-between;
+   flex-direction: column;
+   justify-content: center;
+    @include breakpoint(mama-bear) {width: 20%; } 
+ @include breakpoint(aunt-bear) {width: 20%; }    
+  @include breakpoint(uncle-bear) {width: 30%; }   
+  @include breakpoint(baby-bear) {width: 40%; }
  }
- &-ContainerInfoRight{
 
- }
-
- &-ContainerInfoLeft{
-   
- }
+ // fontpart 
   &-sectionTitle{
        font-size: 90px;
     font-family: 'Alegreya Sans SC', sans-serif;
     text-align: center;
+    font-weight: bold;
+
      @include breakpoint(uncle-bear) {font-size: 60px;}
     @include breakpoint(baby-bear) {font-size: 40px;}
   }
   &-subtitle{
-   font-size: 1.5em;
+   font-size: 1.7em;
    font-family: 'Alegreya Sans SC', sans-serif;
-    margin: 1.2em 0em;
+    margin: 2.2em 0em;
+    text-transform: uppercase;
+    font-weight: bold;
+     @include breakpoint(papabro-bear) {font-size: 1.4em;}
+     @include breakpoint(mama-bear) {font-size: 1.3em;}
+    @include breakpoint(aunt-bear) {font-size: 1.2em;}
  }
  &-paragraph{
+   font-size: 1em;
   font-family: 'Montserrat', sans-serif;
-  text-align: justify;
- }
- &-profil{
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
+  text-align: left;
+     @include breakpoint(papabro-bear) {font-size: 0.8em;}
+     @include breakpoint(mama-bear) {font-size: 0.7em;}
+    @include breakpoint(aunt-bear) {font-size: 0.8em;}
  }
 
-   
+ &-subtitleSection{
+ font-size: 1.4em;
+  font-family: 'Alegreya Sans SC', sans-serif;
+ margin: 0.6em 0em;
+     @include breakpoint(papabro-bear) {font-size: 1.2em;}
+     @include breakpoint(mama-bear) {font-size: 1.1em;}
+    @include breakpoint(aunt-bear) {font-size: 1em;}
+ }
+&-listSection{
+   font-size: 20px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    margin: 0em 0.6em;
+    @include breakpoint(papabro-bear) {font-size: 0.8em;}
+    @include breakpoint(mama-bear) {font-size: 0.7em;}
+    @include breakpoint(aunt-bear) {font-size: 0.7em;}
+  }
+  &-ulSection {
+    margin: .5em 0;
+    padding-left: .5em;
+    font-size: 1.2em;
+    border-left: 1px solid #535353;
+    list-style: none;
+  }
 }
 
-li{
-  font-family: 'Montserrat', sans-serif;
- margin: 0.4em 0em;
-}

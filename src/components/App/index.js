@@ -1,8 +1,5 @@
 // == Import : npm
 import React from 'react';
-// import router
-// import { Route, Switch, Redirect } from 'react-router-dom';
-
 // import components
 import Navbar from 'src/components/Navbar';
 import Backdrop from 'src/components/Backdrop';
@@ -60,8 +57,8 @@ class App extends React.Component {
   };
 
   render() {
+    console.log('tableau about', data[0].about);
     const { sideDrawerOpen, sectionOpen, cat } = this.state;
-
     let backdrop;
     let sideDrawer;
     let sectionClose;
@@ -109,7 +106,12 @@ class App extends React.Component {
 
             </section>
             <section id="apropros">
-              <About />
+              {data[0].about.map(currentDataAbout => (
+                <About
+                  key={currentDataAbout.name}
+                  {...currentDataAbout}
+                />
+              ))}
             </section>
             <section id="contact">
               <Contact />
