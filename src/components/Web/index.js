@@ -58,3 +58,24 @@ Web.propTypes = {
 
 
 export default Web;
+<<<<<<< HEAD
+=======
+
+// {/* const Web = () => (
+//   <div id="web">
+//     <h1 id="web-sectionTitle">Web</h1>
+//     <div id="web-container">
+//       <div id="web-ContainerImage">
+//         <img
+//           id="web-image"
+//           src="src/assets/images/musicalcard.jpg"
+//           alt="ArtPicture"
+//         />
+//         <NavLink exact to="/detail" id="web-overlay">
+//           <h3 id="web-title">musicalcard</h3>
+//           <p id="web-paragraph">Editions-2017</p>
+//         </NavLink>
+//       </div>
+
+// ); */}
+>>>>>>> 0d722fefe3b8670585e02a1ff497c429616acf65

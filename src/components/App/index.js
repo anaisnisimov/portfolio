@@ -1,5 +1,22 @@
 // == Import : npm
 import React from 'react';
+// import router
+// import { Route, Switch, Redirect } from 'react-router-dom';
+
+// import components
+import Navbar from 'src/components/Navbar';
+import Backdrop from 'src/components/Backdrop';
+import SideDrawer from 'src/components/SideDrawer';
+import Home from 'src/components/Home';
+import Art from 'src/components/Art';
+import Web from 'src/components/Web';
+import About from 'src/components/About';
+import Contact from 'src/components/Contact';
+import Footer from 'src/components/Footer';
+import Section from 'src/components/Section';
+import SectionToggleButton from 'src/components/SectionToggleButton';
+
+
 
 // import components
 import Navbar from 'src/components/Navbar';
