@@ -12,6 +12,7 @@
     "babel-loader": "*",
     "chai": "*",
     "css-loader": "*",
+    "envify": "^4.1.0",
     "enzyme": "*",
     "enzyme-adapter-react-16": "*",
     "eslint": "*",
@@ -67,6 +68,8 @@
     "react-typical": "^0.1.3",
     "redux": "^4.0.4",
     "semantic-ui-react": "^0.88.2",
+    "terser-webpack-plugin": "^2.3.5",
+    "uglify-js": "^3.8.0",
     "yarn": "^1.22.0"
   }
 }

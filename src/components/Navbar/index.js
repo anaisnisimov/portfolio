@@ -43,8 +43,8 @@ class NavBar extends React.Component {
                 id="navbar-navlogo"
                 onMouseEnter={this.HandleHover}
                 onMouseLeave={this.HandleHover}
-                // src={`/assets/images/${overlay ? 'marche' : 'marche_grey'}.png`}
-                src={`src/assets/images/${overlay ? 'marche' : 'marche_grey'}.png`}
+                src={`/assets/images/${overlay ? 'marche' : 'marche_grey'}.png`}
+                // src={`src/assets/images/${overlay ? 'marche' : 'marche_grey'}.png`}
               />     
             </NavLink>
           </div>

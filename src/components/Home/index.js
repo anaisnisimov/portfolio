@@ -27,7 +27,7 @@ class Home extends React.Component {
           </p>
         </div>
         <div id="home-ContainerImage">
-          <img id="home-image" src="src/assets/images/logoecoute1_copie.png" alt="logohome" size="small" />
+          <img id="home-image" src="/assets/images/logoecoute1_copie.png" alt="logohome" size="small" />
         </div>
       </div>
     );

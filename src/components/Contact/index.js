@@ -28,7 +28,7 @@ const Contact = () => (
     </h1>
     <div id="contact-Container">
       <div id="contact-ContainerImage">
-        <img id="contact-image" src="src/assets/images/contact_carte.png" alt="logohome" size="small" />
+        <img id="contact-image" src="/assets/images/contact_carte.png" alt="logohome" size="small" />
       </div>
       <div id="contact-ContainerInfo">
         <h3 id="contact-subtitle">+33(0)6-25-51-85-35</h3>

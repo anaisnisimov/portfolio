@@ -10,11 +10,11 @@ export default [
         year: '2019',
         type: 'plateforme intéractive sonore',
         link: 'http://www.bitume.website',
-        cover: 'src/assets/images/bitume/bitume.png',
+        cover: '/assets/images/bitume/bitume.png',
         image: [
-          'src/assets/images/bitume/home.png',
-          'src/assets/images/bitume/mapuser.png',
-          'src/assets/images/bitume/mapsound.png',
+          '/assets/images/bitume/home.png',
+          '/assets/images/bitume/mapuser.png',
+          '/assets/images/bitume/mapsound.png',
         ],
 
         skills: [
@@ -44,11 +44,11 @@ export default [
         year: '2019',
         type: 'logiciel de planification pour les institutions culturelles',
         link: 'http://it4culture.com/website/#home',
-        cover: 'src/assets/images/it4culture/cover.png',
+        cover: '/assets/images/it4culture/cover.png',
         image: [
-          'src/assets/images/it4culture/it4culture1.png',
-          'src/assets/images/it4culture/it4culture2.png',
-          'src/assets/images/it4culture/it4culture3.png',
+          '/assets/images/it4culture/it4culture1.png',
+          '/assets/images/it4culture/it4culture2.png',
+          '/assets/images/it4culture/it4culture3.png',
         ],
         skills: [
           'HTML/CSS',
@@ -78,18 +78,18 @@ export default [
         size: 'environ 4min',
         material: 'cinq sculpture d\'Argile, touch board, haut parleurs, Encre conductrice',
         link: 'https://summercamp.hotglue.me/?2019',
-        cover: 'src/assets/art/images/summercamp/image1.jpg',
+        cover: '/assets/art/images/summercamp/image1.jpg',
         image: [
-          'src/assets/art/images/summercamp/image1.jpg',
-          'src/assets/art/images/summercamp/image2.jpg',
-          'src/assets/art/images/summercamp/image3.jpg',
+          '/assets/art/images/summercamp/image1.jpg',
+          '/assets/art/images/summercamp/image2.jpg',
+          '/assets/art/images/summercamp/image3.jpg',
         ],
         sound: [
-          'src/assets/art/sound/summercamp/TRACK000.mp3',
-          'src/assets/art/sound/summercamp/TRACK002.mp3',
-          'src/assets/art/sound/summercamp/TRACK004.mp3',
-          'src/assets/art/sound/summercamp/TRACK007.mp3',
-          'src/assets/art/sound/summercamp/TRACK011.mp3',
+          '/assets/art/sound/summercamp/TRACK000.mp3',
+          '/assets/art/sound/summercamp/TRACK002.mp3',
+          '/assets/art/sound/summercamp/TRACK004.mp3',
+          '/assets/art/sound/summercamp/TRACK007.mp3',
+          '/assets/art/sound/summercamp/TRACK011.mp3',
         ],
         video: [
           ' ',
@@ -114,16 +114,16 @@ export default [
         size: '3 coquillages 16 x 5 x 5 cm chaque',
         material: '3 haut-parleurs, 3 mp3, 3 amplificateurs, 3socles 20 x 25 x 7cm',
         link: 'http://www.la-compagnie.org/portfolio/hypersensibles/',
-        cover: 'src/assets/art/images/expirationReves/image1.jpg',
+        cover: '/assets/art/images/expirationReves/image1.jpg',
         image: [
-          'src/assets/art/images/expirationReves/image1.jpg',
-          'src/assets/art/images/expirationReves/image2.jpg',
-          'src/assets/art/images/expirationReves/image3.jpg',
+          '/assets/art/images/expirationReves/image1.jpg',
+          '/assets/art/images/expirationReves/image2.jpg',
+          '/assets/art/images/expirationReves/image3.jpg',
         ],
         sound: [
-          'src/assets/art/sound/expirationReves/mondedesmondes.mp3',
-          'src/assets/art/sound/expirationReves/expirationdesreves.mp3',
-          'src/assets/art/sound/expirationReves/quelendroit.mp3',
+          '/assets/art/sound/expirationReves/mondedesmondes.mp3',
+          '/assets/art/sound/expirationReves/expirationdesreves.mp3',
+          '/assets/art/sound/expirationReves/quelendroit.mp3',
         ],
         video: [
           
@@ -150,12 +150,12 @@ export default [
         size: '1min43',
         material: 'hydrophone, guitare, voix',
         link: 'http://www.radiopapesse.org/it/notizie/archivio-notizie/benjamin-i-vincitori-del-call-e-i-lavori-selezionati',
-        cover: 'src/assets/art/images/hydrophage/benjamin.jpg',
+        cover: '/assets/art/images/hydrophage/benjamin.jpg',
         image: [
-          'src/assets/art/images/hydrophage/benjamin.jpg',
+          '/assets/art/images/hydrophage/benjamin.jpg',
         ],
         sound: [
-          'src/assets/art/sound/hydrophage/hydrophage.mp3',
+          '/assets/art/sound/hydrophage/hydrophage.mp3',
         ],
         video: [
           
@@ -179,24 +179,24 @@ export default [
         size: 'Multiple de 10 cartes musicales 10cm x 25cm',
         material: 'Impression jet d’encre, 10 pcb sound recording',
         link: 'http://www.ecole-art-aix.fr/6981-anais-nisimov',
-        cover: 'src/assets/art/images/musicalCard/musicalcard.jpg',
+        cover: '/assets/art/images/musicalCard/musicalcard.jpg',
         image: [
-          'src/assets/art/images/musicalCard/musicalcard.jpg',
-          'src/assets/art/images/musicalCard/install.jpg',
-          'src/assets/art/images/musicalCard/detailcarte.jpg',
+          '/assets/art/images/musicalCard/musicalcard.jpg',
+          '/assets/art/images/musicalCard/install.jpg',
+          '/assets/art/images/musicalCard/detailcarte.jpg',
         ],
         
         sound: [
-          'src/assets/art/sound/musicalCard/anja1.mp3',
-          'src/assets/art/sound/musicalCard/andrei1.mp3',
-          'src/assets/art/sound/musicalCard/ban1.mp3',
-          'src/assets/art/sound/musicalCard/bogdan1.mp3',
-          'src/assets/art/sound/musicalCard/echo2.mp3',
-          'src/assets/art/sound/musicalCard/ilpo1.mp3',
-          'src/assets/art/sound/musicalCard/koko1.mp3',
-          'src/assets/art/sound/musicalCard/maito1.mp3',
-          'src/assets/art/sound/musicalCard/maritza1.mp3',
-          'src/assets/art/sound/musicalCard/victor1.mp3',
+          '/assets/art/sound/musicalCard/anja1.mp3',
+          '/assets/art/sound/musicalCard/andrei1.mp3',
+          '/assets/art/sound/musicalCard/ban1.mp3',
+          '/assets/art/sound/musicalCard/bogdan1.mp3',
+          '/assets/art/sound/musicalCard/echo2.mp3',
+          '/assets/art/sound/musicalCard/ilpo1.mp3',
+          '/assets/art/sound/musicalCard/koko1.mp3',
+          '/assets/art/sound/musicalCard/maito1.mp3',
+          '/assets/art/sound/musicalCard/maritza1.mp3',
+          '/assets/art/sound/musicalCard/victor1.mp3',
         ],
         video: [
           
@@ -222,11 +222,11 @@ export default [
         size: 'environ 5 x 50 x 5 cm chaque',
         material: 'Sculpture en métal',
         link: 'http://www.ecole-art-aix.fr/6981-anais-nisimov',
-        cover: 'src/assets/art/images/aucreux/detailaucreuxdeloreille.jpg',
+        cover: '/assets/art/images/aucreux/detailaucreuxdeloreille.jpg',
         image: [
-          'src/assets/art/images/aucreux/detailaucreuxdeloreille.jpg',
-          'src/assets/art/images/aucreux/ensemble.jpg',
-          'src/assets/art/images/aucreux/spectateurs.jpg',
+          '/assets/art/images/aucreux/detailaucreuxdeloreille.jpg',
+          '/assets/art/images/aucreux/ensemble.jpg',
+          '/assets/art/images/aucreux/spectateurs.jpg',
         ],
         sound: [
           
@@ -255,14 +255,14 @@ export default [
         size: 'Panneau d’attente, A5, Structure en bois 200 x 80 x 80 cm, 6 min 30',
         material: 'Haut-Parleur, Amplificateur, Son.',
         link: 'http://www.ecole-art-aix.fr/6981-anais-nisimov',
-        cover: 'src/assets/art/images/serviceCabine/cabineensemble.jpg',
+        cover: '/assets/art/images/serviceCabine/cabineensemble.jpg',
         image: [
-          'src/assets/art/images/serviceCabine/cabineensemble.jpg',
-          'src/assets/art/images/serviceCabine/cabinedetail.jpg',
-          'src/assets/art/images/serviceCabine/notice.jpg',
+          '/assets/art/images/serviceCabine/cabineensemble.jpg',
+          '/assets/art/images/serviceCabine/cabinedetail.jpg',
+          '/assets/art/images/serviceCabine/notice.jpg',
         ],
         sound: [
-          'src/assets/art/sound/serviceCabine/cabineok.mp3',
+          '/assets/art/sound/serviceCabine/cabineok.mp3',
         ],
         video: [
           
@@ -289,12 +289,12 @@ export default [
         size: '2 min',
         material: 'Texte lu, bambou sec 2m chaque, trepied en métal 1m chaque, tabouret simili cuir',
         link: 'http://www.ecole-art-aix.fr/6981-anais-nisimov',
-        cover: 'src/assets/art/images/mur/detail.png',
+        cover: '/assets/art/images/mur/detail.png',
         image: [
-          'src/assets/art/images/mur/detailbambouerikm.jpg',
-          'src/assets/art/images/mur/detailbambou.jpg',
-          'src/assets/art/images/mur/ensemble.jpg',
-          'src/assets/art/images/mur/detail.png',
+          '/assets/art/images/mur/detailbambouerikm.jpg',
+          '/assets/art/images/mur/detailbambou.jpg',
+          '/assets/art/images/mur/ensemble.jpg',
+          '/assets/art/images/mur/detail.png',
         ],
         sound: [
           
@@ -324,16 +324,16 @@ export default [
         size: '6min20',
         material: 'Table portable, Micro Lem, Nagra, 70 Papier A5, adresse html.',
         link: 'http://www.anaisnisimov.fr/pourquoimediretoutca.html',
-        cover: 'src/assets/art/images/pourquoimediretoutca/papier.png',
+        cover: '/assets/art/images/pourquoimediretoutca/papier.png',
         image: [
-          'src/assets/art/images/pourquoimediretoutca/papier.png',
-          'src/assets/art/images/pourquoimediretoutca/doc1.jpg',
-          'src/assets/art/images/pourquoimediretoutca/doc2.jpg',
-          'src/assets/art/images/pourquoimediretoutca/doc3.jpg',
+          '/assets/art/images/pourquoimediretoutca/papier.png',
+          '/assets/art/images/pourquoimediretoutca/doc1.jpg',
+          '/assets/art/images/pourquoimediretoutca/doc2.jpg',
+          '/assets/art/images/pourquoimediretoutca/doc3.jpg',
 
         ],
         sound: [
-          'src/assets/art/sound/pourquoimediretoutca/pourquoimediretoutca.mp3',
+          '/assets/art/sound/pourquoimediretoutca/pourquoimediretoutca.mp3',
         ],
         video: [
           
@@ -359,18 +359,18 @@ export default [
         // size: '',
         material: '1 T-shirt sérigraphié, L',
         link: 'http://www.ecole-art-aix.fr/6981-anais-nisimov',
-        cover: 'src/assets/art/images/appeldelapeau/cover.png',
+        cover: '/assets/art/images/appeldelapeau/cover.png',
         image: [
-          'src/assets/art/images/appeldelapeau/detail1.jpeg',
-          'src/assets/art/images/appeldelapeau/cover.png',
-          'src/assets/art/images/appeldelapeau/detail2.jpeg',
-          'src/assets/art/images/appeldelapeau/detail3.jpeg',
+          '/assets/art/images/appeldelapeau/detail1.jpeg',
+          '/assets/art/images/appeldelapeau/cover.png',
+          '/assets/art/images/appeldelapeau/detail2.jpeg',
+          '/assets/art/images/appeldelapeau/detail3.jpeg',
         ],
         sound: [
           
         ],
         video: [
-          'src/assets/art/video/appeldelapeau/appeldelapeau_demo.mp4',
+          '/assets/art/video/appeldelapeau/appeldelapeau_demo.mp4',
         ],
         interpretation: [
           'En collaboration avec Anja Khersonska',
@@ -394,19 +394,19 @@ export default [
         size: '6 vidéos projecteurs, 2 kinect, 1 Vive Controller, 1 ordinateur, 4 enceintes',
         material: 'Processing, Unity, Resolume',
         link: 'https://io.hbksaar.de/projekte/details/174',
-        cover: 'src/assets/art/images/findthedoor/doc1.png',
+        cover: '/assets/art/images/findthedoor/doc1.png',
         image: [
-          'src/assets/art/images/findthedoor/doc1.png',
-          'src/assets/art/images/findthedoor/doc2.jpeg',
-          'src/assets/art/images/findthedoor/doc3.jpeg',
-          'src/assets/art/images/findthedoor/doc4.jpeg',
+          '/assets/art/images/findthedoor/doc1.png',
+          '/assets/art/images/findthedoor/doc2.jpeg',
+          '/assets/art/images/findthedoor/doc3.jpeg',
+          '/assets/art/images/findthedoor/doc4.jpeg',
 
         ],
         sound: [
           
         ],
         video: [
-          'src/assets/art/video/findthedoor/findthedoor_documentation_expo.mp4',
+          '/assets/art/video/findthedoor/findthedoor_documentation_expo.mp4',
         ],
         interpretation: [
           'Réalisé avec Victor Griers et Andrei Ebinca',
@@ -428,20 +428,20 @@ export default [
         size: '3 min',
         material: 'Kinect, Processing, Protools, Resolume',
         link: 'http://www.ecole-art-aix.fr/Monumental-3',
-        cover: 'src/assets/art/images/mapping/mappingdetail.png',
+        cover: '/assets/art/images/mapping/mappingdetail.png',
         image: [
-          'src/assets/art/images/mapping/mappingdetail.png',
-          'src/assets/art/images/mapping/doc2.jpg',
-          'src/assets/art/images/mapping/doc3.jpg',
-          'src/assets/art/images/mapping/doc4.jpg',
-          'src/assets/art/images/mapping/doc5.jpg',
+          '/assets/art/images/mapping/mappingdetail.png',
+          '/assets/art/images/mapping/doc2.jpg',
+          '/assets/art/images/mapping/doc3.jpg',
+          '/assets/art/images/mapping/doc4.jpg',
+          '/assets/art/images/mapping/doc5.jpg',
 
         ],
         sound: [
           
         ],
         video: [
-          'src/assets/art/video/mapping/mappingdiffusion.mp4',
+          '/assets/art/video/mapping/mappingdiffusion.mp4',
         ],
         interpretation: [
           'Chants : Lise Godard et Anaïs Nisimov',
@@ -462,20 +462,20 @@ export default [
         size: '11min45',
         material: 'TV 4:3, lecteur DVD, 2 enceintes stéréo, 4 tabourets OSB 30 x 30, 2 socles 17 x 23cm, 1 socle 15 x 62cm',
         link: 'http://www.ecole-art-aix.fr/Voayges-immolibes',
-        cover: 'src/assets/art/images/vasarely/ensemble.png',
+        cover: '/assets/art/images/vasarely/ensemble.png',
         image: [
-          'src/assets/art/images/vasarely/doc1.jpeg',
-          'src/assets/art/images/vasarely/doc3.jpeg',
-          'src/assets/art/images/vasarely/doc4.jpeg',
-          'src/assets/art/images/vasarely/doc10.jpeg',
-          'src/assets/art/images/vasarely/doc11.jpeg',
-          'src/assets/art/images/vasarely/doc12.jpeg',
+          '/assets/art/images/vasarely/doc1.jpeg',
+          '/assets/art/images/vasarely/doc3.jpeg',
+          '/assets/art/images/vasarely/doc4.jpeg',
+          '/assets/art/images/vasarely/doc10.jpeg',
+          '/assets/art/images/vasarely/doc11.jpeg',
+          '/assets/art/images/vasarely/doc12.jpeg',
         ],
         sound: [
           
         ],
         video: [
-          'src/assets/art/video/vasarely/vasarely.mp4',
+          '/assets/art/video/vasarely/vasarely.mp4',
         ],
         interpretation: [
         
@@ -520,7 +520,7 @@ export default [
         id: 666,
         name: 'about',
         title: 'À propos',
-        image: 'src/assets/images/profil.png',
+        image: '/assets/images/profil.png',
         subtitle: 'Compétences',
         titleSection: [
           'Front-end',
