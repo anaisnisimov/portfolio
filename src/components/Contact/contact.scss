@@ -5,7 +5,7 @@
 width: 100%;
 margin-bottom: 10em;
   &-Container{
-    width: 100%;
+    width: 90%;
     display:flex;
     justify-content: center;
   }
@@ -37,7 +37,7 @@ margin-bottom: 10em;
     width: 100%;
     height: 100%;
   @include breakpoint(uncle-bear) {width: 90%; height:90%;}
-  @include breakpoint(baby-bear) {width: 100%; height:100%;}
+  @include breakpoint(baby-bear) {width: 80%; height:80%;}
   }
 
   &-subtitle{
@@ -46,7 +46,7 @@ margin-bottom: 10em;
   text-align: left;
   margin: 0em 0em 1.5em 2em;
    @include breakpoint(uncle-bear) {font-size: 0.7em;}
-    @include breakpoint(baby-bear) {font-size: 0.7em;}
+    @include breakpoint(baby-bear) {font-size: 0.6em;}
  } 
  &-sectionTitle{
     font-size: 90px;
@@ -54,7 +54,7 @@ margin-bottom: 10em;
     font-family: 'Alegreya Sans SC', sans-serif;
     text-align: center;
      @include breakpoint(uncle-bear) {font-size: 60px;}
-    @include breakpoint(baby-bear) {font-size: 40px;}
+    @include breakpoint(baby-bear) {font-size: 30px;}
   }
   &-linkShare{
     color:$colorTitleNav;

@@ -526,7 +526,7 @@ export default [
           'Front-end',
           'Back-end',
           'CMS',
-          'Outils',
+          'Outils de développement',
           'Management',
           'Graphisme',
           'Vidéo-Son',

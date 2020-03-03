@@ -54,7 +54,7 @@ class NavBar extends React.Component {
               <li><AnchorLink offset={() => 100} id="navbar-navlink" href="#home">Accueil</AnchorLink></li>
               <li><AnchorLink offset={() => 100} id="navbar-navlink" href="#art">Art</AnchorLink></li>
               <li><AnchorLink offset={() => 100} id="navbar-navlink" href="#web">web</AnchorLink></li>
-              <li><AnchorLink offset={() => 100} id="navbar-navlink" href="#apropros">À propos</AnchorLink></li>
+              <li><AnchorLink offset={() => 110} id="navbar-navlink" href="#apropros">À propos</AnchorLink></li>
               <li><AnchorLink offset={() => 100} id="navbar-navlink" href="#contact">Contact</AnchorLink></li>
             </ul>
           </div>

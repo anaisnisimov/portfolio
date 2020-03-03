@@ -9,35 +9,44 @@
   flex-direction: column;
   align-items: center;
  
+// presentation part (description + profil picture)
   &-presentationContainer{
-      width:80%;
-      margin:2em 0em;
+      width:50%;
+      margin:3em 0em 0em 0em;
   display:flex;
   justify-content: center;
+  flex-direction: column;
+  
+     @include breakpoint(papabro-bear) {width:50%;}
+     @include breakpoint(mama-bear) {width:50%;}
+     @include breakpoint(aunt-bear) {width: 50%;}
+     @include breakpoint(uncle-bear) {width:50%;}
+     @include breakpoint(baby-bear) {width:80%;}
+
 }
     &-description{
-      width:50%;
+      // background-color: green;
       display:flex;
-     @include breakpoint(baby-bear) {width: 50%;}
+      margin:1em 0em 0em 0em;
+     @include breakpoint(uncle-bear) {width:100%; margin:1em 0em;}
+     @include breakpoint(baby-bear) {width: 100%; margin:1em 0em;}
    
     }
   &-ContainerImage{
-   width: 30%;
-   height: 30%;
+    // background-color: red;
+   width: 100%;
+   height: 50%;
   display: flex;
-  justify-content: flex-end;
-      margin:0em 2em;
+  justify-content: center;
+     @include breakpoint(uncle-bear) {justify-content: center;width:100%;}
+     @include breakpoint(baby-bear) {justify-content: center;width:100%;}
 
- @include breakpoint(mama-bear) {width: 30%; height:30%;} 
- @include breakpoint(aunt-bear) {width: 30%; height:30%;}    
-  @include breakpoint(uncle-bear) {width: 30%; height:30%;}   
-  @include breakpoint(baby-bear) {width: 30%; height:30%;}
   }
   &-image{ 
-     width:70%;
-    height: 70%;
-    max-width: 70%;
-    max-height: 70%;
+     width:50%;
+    height: 50%;
+    max-width: 50%;
+    max-height: 50%;
      @include breakpoint(mama-bear) {
        width:70%;
         height: 70%;
@@ -57,22 +66,21 @@
         max-height: 70%;
     }    
   @include breakpoint(baby-bear) {     
-      width:90%;
-        height: 90%;
-        max-width: 90%;
-        max-height: 90%;
+      width:70%;
+        height: 70%;
+        max-width: 70%;
+        max-height: 70%;
     }  
   }
 
+
+  // competences part 
  &-competences{
-  width:20%;
+  //  background-color:yellow;
+  width:50%;
    display:flex;
-   flex-direction: column;
-   justify-content: center;
-    @include breakpoint(mama-bear) {width: 20%; } 
- @include breakpoint(aunt-bear) {width: 20%; }    
-  @include breakpoint(uncle-bear) {width: 30%; }   
-  @include breakpoint(baby-bear) {width: 40%; }
+   flex-direction: column;  
+  @include breakpoint(baby-bear) {width: 40%; justify-content: center; }
  }
 
  // fontpart 
@@ -80,15 +88,13 @@
        font-size: 90px;
     font-family: 'Alegreya Sans SC', sans-serif;
     text-align: center;
-    font-weight: bold;
-
-     @include breakpoint(uncle-bear) {font-size: 60px;}
+    @include breakpoint(uncle-bear) {font-size: 60px;}
     @include breakpoint(baby-bear) {font-size: 40px;}
   }
   &-subtitle{
    font-size: 1.7em;
    font-family: 'Alegreya Sans SC', sans-serif;
-    margin: 2.2em 0em;
+    margin: 2.2em 0em 1em 0em;
     text-transform: uppercase;
     font-weight: bold;
      @include breakpoint(papabro-bear) {font-size: 1.4em;}
@@ -100,7 +106,7 @@
   font-family: 'Montserrat', sans-serif;
   text-align: left;
      @include breakpoint(papabro-bear) {font-size: 0.8em;}
-     @include breakpoint(mama-bear) {font-size: 0.7em;}
+     @include breakpoint(mama-bear) {font-size: 0.8em;}
     @include breakpoint(aunt-bear) {font-size: 0.8em;}
  }
 
