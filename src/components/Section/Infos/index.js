@@ -41,7 +41,7 @@ const Infos = ({ title, year, link, skills, infoSkills, name }) => (
       <div id="infos-containerListSkills">
         <ul>
           {skills.map(skill => (
-            <li key={skill}> <span id="infos-skills">{skill}</span></li>
+            <li key={skill} id="infos-skills">{skill}</li>
           ))}
         </ul>
       </div>
