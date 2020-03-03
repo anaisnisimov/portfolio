@@ -57,7 +57,7 @@ class App extends React.Component {
   };
 
   render() {
-    console.log('tableau about', data[0].about);
+    // console.log('tableau about', data[0].about);
     const { sideDrawerOpen, sectionOpen, cat } = this.state;
     let backdrop;
     let sideDrawer;

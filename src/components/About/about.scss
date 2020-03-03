@@ -80,7 +80,7 @@
        font-size: 90px;
     font-family: 'Alegreya Sans SC', sans-serif;
     text-align: center;
-    font-weight: bold;
+  
 
      @include breakpoint(uncle-bear) {font-size: 60px;}
     @include breakpoint(baby-bear) {font-size: 40px;}

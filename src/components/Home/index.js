@@ -17,13 +17,7 @@ class Home extends React.Component {
       <div id="home">
         <div id="home-presentation">
           <h1 id="home-title">Anaïs Nisimov</h1>
-          <p id="home-paragraph">Je suis{' '}
-            <Typical
-              id="home-profil"
-              steps={['artiste sonore et numérique', 2000, 'développeuse web Junior', 2000]}
-              loop={Infinity}
-              wrapper="b"
-            />
+          <p id="home-paragraph">Artiste sonore numérique / Développeuse web Fullstack
           </p>
         </div>
         <div id="home-ContainerImage">
