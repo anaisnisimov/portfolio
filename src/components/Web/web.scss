@@ -2,9 +2,17 @@
 @import 'src/styles/breackpoint';
 #web{
 width:100%;
+ padding:1em 0em 16em 0em;
+  @include breakpoint(uncle-bear) {   
+ padding:1em 0em 14em 0em;}
+
+  @include breakpoint(baby-bear) {
+ padding:1em 0em 7em 0em;
+   }
+background-color: $backgroundAbout;
 &-container{
   width:100%; 
-  margin:4em 0em 20em 0em;
+ margin:4em 0em 0em 0em;
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -102,7 +110,3 @@ position: relative;
          transition: .2s ease;
        }
 }
-
-
-
-
