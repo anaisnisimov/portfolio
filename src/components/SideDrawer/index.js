@@ -35,7 +35,7 @@ class SideDrawer extends React.Component {
             <li><AnchorLink offset={() => 100} id="sideDrawer-navlink" href="#home">Accueil</AnchorLink></li>
             <li><AnchorLink offset={() => 100} id="sideDrawer-navlink" href="#art">Art</AnchorLink></li>
             <li><AnchorLink offset={() => 100} id="sideDrawer-navlink" href="#web">web</AnchorLink></li>
-            <li><AnchorLink offset={() => 110} id="sideDrawer-navlink" href="#apropros">À propos</AnchorLink></li>
+            <li><AnchorLink offset={() => 100} id="sideDrawer-navlink" href="#apropros">À propos</AnchorLink></li>
             <li><AnchorLink offset={() => 100} id="sideDrawer-navlink" href="#contact">Contact</AnchorLink></li>
           </ul>
         </div>
