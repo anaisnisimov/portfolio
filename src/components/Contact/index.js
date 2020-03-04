@@ -40,7 +40,7 @@ const Contact = () => (
           <a id="contact-linkShare" rel="noopener noreferrer" href="https://www.linkedin.com/in/anais-nisimov/" target="_blank">
             <Icon id="contact-iconShare" name="linkedin" size="large" />
           </a>
-          <a id="contact-linkShare" rel="noopener noreferrer" href="https://www.linkedin.com/in/anais-nisimov/" target="_blank">
+          <a id="contact-linkShare" rel="noopener noreferrer" href="https://github.com/anaisnisimov" target="_blank">
             <Icon id="contact-iconShare" name="github square" size="large" />
           </a>
           <a id="contact-linkShare" rel="noopener noreferrer" href="https://soundcloud.com/anais-nisimov" target="_blank">
