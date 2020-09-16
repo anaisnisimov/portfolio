@@ -3,12 +3,12 @@ import './infos.scss';
 import { Icon } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 
-
 const Infos = ({ title, year, link, skills, infoSkills, name }) => (
   <div id="infos">
+    <div id="infos-Box">
     <div id="infos-container" key={name}>
       <h1 id="infos-title">Développement</h1>
-      <ul>
+      <ul id="infos-ulDescription">
         {infoSkills.map(infoSkill => (
           <li id="infos-description" key={infoSkill}>
             <Icon name="checkmark" size="small" />
@@ -56,6 +56,7 @@ const Infos = ({ title, year, link, skills, infoSkills, name }) => (
         visiter le site
         </a>
       </div>
+    </div>
     </div>
   </div>
 );

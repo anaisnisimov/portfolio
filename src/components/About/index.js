@@ -45,9 +45,9 @@ const About = ({
     </h1>
 
     <div id="about-presentationContainer">
-      <div id="about-ContainerImage">
+      {/* <div id="about-ContainerImage">
         <img id="about-image" src={`${image}`} alt="logohome" />
-      </div>
+      </div> */}
       <div id="about-description">
         <p id="about-paragraph">{description}</p>
       </div>
