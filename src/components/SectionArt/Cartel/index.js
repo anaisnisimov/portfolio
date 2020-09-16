@@ -18,7 +18,7 @@ const Cartel = ({
     <div id="cartel-container">
       <h1 id="cartel-title">{title}</h1>
       <h3 id="cartel-location">{location}<span id="cartel-locationDate">{yearOfExibition}</span></h3>
-      <p id="cartel-infos">{type}s</p>
+      <p id="cartel-infos">{type}</p>
       <p id="cartel-infos">{size}</p>
       <p id="cartel-infos">{material}</p>
       <ul id="cartel-list">
