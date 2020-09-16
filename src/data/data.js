@@ -97,7 +97,7 @@ export default [
         title: 'fin de formation - Bitume',
         year: '2019',
         type: 'plateforme intéractive sonore',
-        link: 'http://www.bitume.website',
+        link: '',
         cover: 'src/assets/images/bitume/bitume.png',
         image: [
           'src/assets/images/bitume/home.png',
@@ -130,7 +130,7 @@ export default [
     art: [
       // ART PART
       {
-        id: 37,
+        id: 34,
         name: 'arteradio',
         title: 'Errance Connectée',
         location: 'Concours cet été là - arte radio',
@@ -163,7 +163,7 @@ export default [
         ],
       },
       {
-        id: 38,
+        id: 35,
         name: 'Artiste conceptrice pour le jeu AmerNums',
         title: 'AmerNums',
         location: 'Association DansleMemeBateau, plateau de Presles,Vercors',
@@ -193,7 +193,7 @@ export default [
 
         ],
         interpretation: [
-          
+          'Concepteurs : Pauline de Chalendar • Anaïs Nisimov • Yves Brozat • Sancie Belmont • Bastien Maupomé • Fédérica Buffoli.'
         ],
         description: [
           ' est un « workshop de conception amerNums » qui a lieu à l’Amer,',
@@ -217,7 +217,7 @@ export default [
         ],
       },
       {
-        id: 39,
+        id: 36,
         name: 'Exposition sous les racines de Charlotte Beltzung',
         title: 'Sous les cavités inconscientes',
         location: 'Exposition Sous les racines, Unra_La galerie, Rennes',
@@ -241,7 +241,10 @@ export default [
 
         ],
         interpretation: [
+          'Paysage Sonore: Anaïs Nisimov',
           'Guitare: Anaïs Nisimov',
+          'Sculptures et Textes: Charlotte Beltzung',
+          'Voix:Charlotte Beltzung et Lucie Desaubliaux',
         ],
         description: [
           ' est un paysage sonore fictif créer en écho avec le texte de Charlotte Beltzung, Rencontre sous les racines.',
@@ -261,7 +264,7 @@ export default [
         ],
       },
       {
-        id: 40,
+        id: 37,
         name: 'summercamp',
         title: 'Les Caillous racontent des histoires',
         location: 'Exposition et Résidence Summercamp, village Lechange,Dordogne',
@@ -296,7 +299,7 @@ export default [
         ],
       },
       {
-        id: 41,
+        id: 38,
         name: 'expirationdesReves',
         title: 'Expiration des Rêves',
         location: 'Exposition Hypersensible, La Compagnie, Marseille',
@@ -332,7 +335,7 @@ export default [
         ],
       },
       {
-        id: 42,
+        id: 39,
         name: 'Hydrophage',
         title: 'Hydrophage',
         location: 'Festival Benjamin, Florence, Italie',
@@ -358,6 +361,107 @@ export default [
         description: [
           ' est une fiction sonore diffusée dans le tram de Florence.',
           ' Superposition de différents paysages sonores: lieu hybride aquatique, cigale, grincement, chant, guitare',
+        ],
+      },
+      {
+        id: 40,
+        name: 'Culture Experience Day',
+        title: 'Culture Experience Day',
+        location: 'Culture Experience Day - ADAMI, La Cartonnerie, Paris',
+        yearOfExibition: '2019',
+        yearOfCreation: '2019',
+        type: 'Conception collective - Chorégraphie et création sonore',
+        size: '3min11',
+        material: 'kinect, son, choregraphie, montage sonore, création scénique',
+        link: 'https://vimeo.com/303453847',
+        cover: 'src/assets/art/images/weekendcreativeday/adami.jpg',
+        image: [
+          'src/assets/art/images/weekendcreativeday/adami.jpg',
+        ],
+        sound: [
+        ],
+        video: [
+          'src/assets/art/video/weekendcreativeday/bruitatelierdanslaville.mp4',
+        ],
+        interpretation: [
+          
+        ],
+        description: [
+          ' est un moment de création collective pour inventer de nouveaux modes d’interprétation des œuvres à partir de dispositifs scéniques animés par la technologie et les artistes-interprètes !',
+          ' Une restitution des travaux sous la forme d’une performance scénique était organisée à l’issue des 3 jours, en public et en présence de professionnels du spectacle et du numérique…',
+          ' Encadrés par des mentors, les participants ont eu à leur disposition tout le matériel nécessaire pour créer et expérimenter (imprimantes 3D, découpe laser, kinect 360, etc.).',
+          ' Ce week - end était ouvert aux créatifs de tous horizons : artistes - interprètes – musiciens, comédiens, danseurs, circassien, vidéastes, metteurs en scène – et techno créatifs – makers, développeurs, techniciens du spectacle, designers visuels, designers d’interface, sound designers, spécialistes de la communication…',
+        ],
+      },
+      {
+        id: 41,
+        name: 'MarbleBreeze',
+        title: 'MarbleBreeze - workshop ',
+        location: 'Palais de Tokyo, exposition Thomas Saraceno, Aerocene, Paris',
+        yearOfExibition: '2018',
+        yearOfCreation: '2018',
+        type: 'Recherches et Conception collective',
+        size: 'recherches',
+        material: 'Photographies',
+        link: 'https://thr34d5.org/marblebreeze/airmonica/',
+        cover: 'src/assets/art/images/marbleBreeze/Vincennes1.jpg',
+        image: [
+          'src/assets/art/images/marbleBreeze/Vincennes1.jpg',
+          'src/assets/art/images/marbleBreeze/aero.jpg',
+          'src/assets/art/images/marbleBreeze/sample1.jpg',
+          'src/assets/art/images/marbleBreeze/sample2.jpg',
+          'src/assets/art/images/marbleBreeze/sample3.jpg',
+        ],
+        sound: [
+         
+        ],
+        video: [
+
+        ],
+        interpretation: [
+
+        ],
+        description: [
+          ' est un temps de recherche artistique et scientifique autour des questionnements que pose l\'exposition de Thomas Saraceno, On Air, Palais de Tokyo',
+        ],
+      },
+      {
+        id: 42,
+        name: 'Vibes',
+        title: 'Vibes',
+        location: 'Maison de la Danse, Lyon',
+        yearOfExibition: '2018',
+        yearOfCreation: '2018',
+        type: 'Conception collective - Application mobile - projet Lauréat du Dansathon 2018 ',
+        size: 'Environ 10mintues',
+        material: 'Téléphones synchronisés, écouteurs',
+        link: 'https://www.youtube.com/watch?v=tZYIcKz0a3Q&t=118s&ab_channel=FondationBNPParibas',
+        cover: 'src/assets/art/images/vibes/collectif5.jpg',
+        image: [
+          'src/assets/art/images/vibes/collectif.jpg',
+          'src/assets/art/images/vibes/collectif4.jpg',
+          'src/assets/art/images/vibes/collectif5.jpg',
+          'src/assets/art/images/vibes/collectif6.jpg',
+
+        ],
+        sound: [
+          
+        ],
+        video: [
+
+        ],
+        interpretation: [
+          'Chorégraphie :  Eric Minh Cuong Castaing',
+          'Danse et médiation : Maëlle Deral',
+          'Design et intégration :  Anaïs Nisimov',
+          'Production et développement application : Xavier Boissarie',
+          'Création sonore et ingénierie sonore : Romain Constant',
+          'Communication réseaux sociaux et médiation : Anaïs Tardivon',
+        ],
+        description: [
+          ' est un projet collaboratif récompensé à Lyon et accompagné par la Maison de la Danse de Lyon.',
+          ' Cette application de rencontre chorégraphique et sonore permet à des utilisateurs de se rassembler pour partager un instant dansé dans un lieu donné ou dans différentes villes ou pays, au même moment.Équipés d’écouteurs, les danseurs improvisent ensemble leur danse grâce à l’audio - guidance d’un chorégraphe. Leurs mouvements et leurs déplacements dans l’espace influent sur la musique.',
+          
         ],
       },
       {
@@ -687,7 +791,7 @@ export default [
       // size: '',
       // material: '',
       // link: '',
-      // cover: 'src/assets/art/images/',
+      // cover: '/assets/art/images/',
       // image: [
       //   'src/assets/art/images/',
       //   'src/assets/art/images/',
@@ -712,7 +816,7 @@ export default [
         id: 666,
         name: 'about',
         title: 'À propos',
-        image: 'src/assets/images/profil.png',
+        image: '/assets/images/profil.png',
         subtitle: 'Compétences',
         titleSection: [
           'Front-end',
