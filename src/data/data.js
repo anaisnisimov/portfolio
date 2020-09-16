@@ -739,6 +739,8 @@ export default [
           'Axios/Ajax',
           'JWToken',
           'Leaflet',
+          'API Spotify',
+          'API GoogleSheet',
           'Webpack, Babel',
           'Semantic ui, Material ui, Bootstrap',
         ],   
@@ -755,11 +757,6 @@ export default [
         ],
         cms: [
           'Wordpress',
-        ],
-        API: [
-          'Leaflet',
-          'Spotify',
-          'GoogleSheet',
         ],
         tools: [
           'Visual Studio, Sublime Text, Coda',
