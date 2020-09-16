@@ -3,10 +3,6 @@
 #infos {
 width:100%;
 top:30em;
-display:flex;
-flex-wrap: wrap;
-justify-content: space-around;
-
   &-title{
     font-size:1.3em;
     text-align:left;
@@ -35,12 +31,13 @@ justify-content: space-around;
     margin:0.2em 0em;
    
   }
+  
     &-description{
     font-size:0.8em;
     text-align:left;
     text-transform: justify;
     font-family: 'Quicksand',sans-serif ;
-    margin:2em 0em;
+    
   }
 
   //part skills 
@@ -58,13 +55,22 @@ justify-content: space-around;
     margin:0.8em 0.4em; 
   }
 //part informations
+  &-Box {
+width:100%;
+display:flex;
+flex-wrap: wrap;
+justify-content: space-around;
+  }
+
 &-containerInfos {
+  @include breakpoint(papabro-bear){width:50%; margin:0em 1em;}
   @include breakpoint(uncle-bear){width:100%; margin:0em 2em;}
   @include breakpoint(baby-bear) {width:100%; margin:0em 2em;}
   
   }
   //part developpement
   &-container {
+  @include breakpoint(papabro-bear){width:50%; margin:0em 1em;}
   @include breakpoint(uncle-bear){width:100%; margin:0em 2em;}
   @include breakpoint(baby-bear) {width:100%; margin:0em 2em;}
   }
