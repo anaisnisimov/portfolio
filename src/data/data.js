@@ -748,10 +748,18 @@ export default [
           'MySQL',
           'MySQLWorkbench',
           'Laravel/Lumen',
-          'Node.js',
+          'Node.js/Express',
+          'DynamoDB, service AWS',
+          'CORS',
+          'QUERY-string',
         ],
         cms: [
           'Wordpress',
+        ],
+        API: [
+          'Leaflet',
+          'Spotify',
+          'GoogleSheet',
         ],
         tools: [
           'Visual Studio, Sublime Text, Coda',
